@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		DBF329DA1D85EC160069F188 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF329D91D85EC160069F188 /* AppDelegate.swift */; };
-		DBF329DC1D85EC160069F188 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF329DB1D85EC160069F188 /* ViewController.swift */; };
 		DBF329DF1D85EC160069F188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF329DD1D85EC160069F188 /* Main.storyboard */; };
 		DBF329E11D85EC160069F188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF329E01D85EC160069F188 /* Assets.xcassets */; };
 		DBF329E41D85EC160069F188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF329E21D85EC160069F188 /* LaunchScreen.storyboard */; };
+		DBF329EC1D85EC980069F188 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF329EB1D85EC980069F188 /* PhotosViewController.swift */; };
+		DBF329EE1D85EF6B0069F188 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF329ED1D85EF6B0069F188 /* FlickrAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBF329D61D85EC160069F188 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF329D91D85EC160069F188 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBF329DB1D85EC160069F188 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBF329DE1D85EC160069F188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBF329E01D85EC160069F188 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF329E31D85EC160069F188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBF329E51D85EC160069F188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF329EB1D85EC980069F188 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		DBF329ED1D85EF6B0069F188 /* FlickrAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				DBF329D91D85EC160069F188 /* AppDelegate.swift */,
-				DBF329DB1D85EC160069F188 /* ViewController.swift */,
+				DBF329EB1D85EC980069F188 /* PhotosViewController.swift */,
 				DBF329DD1D85EC160069F188 /* Main.storyboard */,
+				DBF329ED1D85EF6B0069F188 /* FlickrAPI.swift */,
 				DBF329E01D85EC160069F188 /* Assets.xcassets */,
 				DBF329E21D85EC160069F188 /* LaunchScreen.storyboard */,
 				DBF329E51D85EC160069F188 /* Info.plist */,
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF329DC1D85EC160069F188 /* ViewController.swift in Sources */,
+				DBF329EE1D85EF6B0069F188 /* FlickrAPI.swift in Sources */,
+				DBF329EC1D85EC980069F188 /* PhotosViewController.swift in Sources */,
 				DBF329DA1D85EC160069F188 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
