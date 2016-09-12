@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "46BDFE3EE5FBD2AB6CEFD1BC4DDBABC50931FB8F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "62841C392B2DF28D1C382F5FC40AA043CDECF7EA" : 0,
+    "46BDFE3EE5FBD2AB6CEFD1BC4DDBABC50931FB8F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8E0158D5-8865-4B25-A77E-662EF8B81FED",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "62841C392B2DF28D1C382F5FC40AA043CDECF7EA" : "Homepwner\/",
+    "46BDFE3EE5FBD2AB6CEFD1BC4DDBABC50931FB8F" : "Photorama\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Photorama",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Photorama.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ya9p8\/Photorama.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "46BDFE3EE5FBD2AB6CEFD1BC4DDBABC50931FB8F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ya9p8\/Homepwner.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "62841C392B2DF28D1C382F5FC40AA043CDECF7EA"
+    }
+  ]
+}

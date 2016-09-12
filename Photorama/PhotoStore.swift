@@ -25,6 +25,7 @@ class PhotoStore {
     }()
     
     let coreDataStack = CoreDataStack(modelName: "Photorama")
+    let imageStore = ImageStore()
     
     func fetchRecentPhotos(completion completion:(PhotosResult) -> Void) {
         let url = FlickrAPI.recentPhotosURL()
@@ -66,8 +67,10 @@ class PhotoStore {
     }
     
     func fetchImageForPhoto(photo: Photo, completion: (ImageResult) -> Void) {
+        let photoKey = photo.photoKey
         
-        if let image = photo.image {
+        if let image = imageStore.imageForKey(photoKey) {
+            photo.image = image
             completion(.Success(image))
             return
         }
@@ -80,6 +83,7 @@ class PhotoStore {
             
             if case let .Success(image) = result {
                 photo.image = image
+                self.imageStore.setImage(image, forKey: photoKey)
             }
             
             completion(result)

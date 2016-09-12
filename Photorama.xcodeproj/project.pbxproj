@@ -21,6 +21,7 @@
 		DBF329FE1D8710C50069F188 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF329FC1D8710C50069F188 /* Photo+CoreDataProperties.swift */; };
 		DBF329FF1D8710C50069F188 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF329FD1D8710C50069F188 /* Photo.swift */; };
 		DBF32A011D8713BE0069F188 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF32A001D8713BE0069F188 /* CoreDataStack.swift */; };
+		DBF32A031D8750700069F188 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF32A021D8750700069F188 /* ImageStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		DBF329FC1D8710C50069F188 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Photo+CoreDataProperties.swift"; path = "../Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DBF329FD1D8710C50069F188 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = ../Photo.swift; sourceTree = "<group>"; };
 		DBF32A001D8713BE0069F188 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DBF32A021D8750700069F188 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageStore.swift; path = ../../Homepwner/Homepwner/ImageStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				DBF329F71D86760A0069F188 /* PhotoInfoViewController.swift */,
 				DBF329F51D8650D40069F188 /* PhotoCollectionViewCell.swift */,
 				DBF329ED1D85EF6B0069F188 /* FlickrAPI.swift */,
+				DBF32A021D8750700069F188 /* ImageStore.swift */,
 				DBF329EF1D85FA930069F188 /* PhotoStore.swift */,
 				DBF329E01D85EC160069F188 /* Assets.xcassets */,
 				DBF329E21D85EC160069F188 /* LaunchScreen.storyboard */,
@@ -173,6 +176,7 @@
 				DBF329FE1D8710C50069F188 /* Photo+CoreDataProperties.swift in Sources */,
 				DBF329F81D86760A0069F188 /* PhotoInfoViewController.swift in Sources */,
 				DBF329DA1D85EC160069F188 /* AppDelegate.swift in Sources */,
+				DBF32A031D8750700069F188 /* ImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
