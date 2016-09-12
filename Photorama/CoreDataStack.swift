@@ -12,7 +12,7 @@ import CoreData
 class CoreDataStack {
     let managedObjectModelName: String
     
-    private lazy var managedObjecModel: NSManagedObjectModel = {
+    private lazy var managedObjectModel: NSManagedObjectModel = {
         let modelURL = NSBundle.mainBundle().URLForResource(self.managedObjectModelName, withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
@@ -23,7 +23,7 @@ class CoreDataStack {
     }()
     
     private lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
-       var coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjecModel)
+       var coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         let pathComponent = "\(self.managedObjectModelName).sqlite"
         let url = self.applicationdocumentsDirectory.URLByAppendingPathComponent(pathComponent)
         
@@ -42,9 +42,24 @@ class CoreDataStack {
         return moc
     }()
     
-    
-    
     required init(modelName: String) {
         managedObjectModelName = modelName
+    }
+    
+    func saveChanges() throws {
+        var error: ErrorType?
+        mainQueueContext.performBlockAndWait { 
+            if self.mainQueueContext.hasChanges {
+                do {
+                    try self.mainQueueContext.save()
+                } catch let saveError {
+                    error = saveError
+                }
+            }
+        }
+        
+        if let error = error {
+            throw error
+        }
     }
 }
