@@ -23,6 +23,8 @@ class PhotoStore {
         return NSURLSession(configuration: config)
     }()
     
+    let coreDataStack = CoreDataStack(modelName: "Photorama")
+    
     func fetchRecentPhotos(completion completion:(PhotosResult) -> Void) {
         let url = FlickrAPI.recentPhotosURL()
         let request = NSURLRequest(URL: url)
